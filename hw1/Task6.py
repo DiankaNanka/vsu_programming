@@ -1,6 +1,6 @@
 print('Введите число: ')
-N = float(input('N: '))
-if N == int(N):
+n = float(input('n: '))
+if n == int(n):
     print('Число не дробное')
 else:
     print('Число дробное')
