@@ -1,5 +1,5 @@
 print('Введите строку: ')
-line=input('line: ')
+line = input('line: ')
 if line == line[::-1]:
     print('Это палиндром')
 else:
