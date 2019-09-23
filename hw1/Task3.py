@@ -1,7 +1,6 @@
 import math
 print('Введите значения X,Y,Z')
-X = int(input('X: '))
-Y = int(input('Y: '))
-Z = int(input('Z: '))
-print(math.sqrt(X ** 2 + Y ** 2 + Z ** 2))
-
+x = float(input('X: '))
+y = float(input('Y: '))
+z = float(input('Z: '))
+print(math.sqrt(x ** 2 + y ** 2 + z ** 2))
