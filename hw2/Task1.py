@@ -1,6 +1,5 @@
-print('Введите значения: ')
+a = input('Введите значения: ')
 b = []
-a = input()
 while a:
    b.append(a)
    a = input()
