@@ -1,5 +1,4 @@
-print('Введите числа: ')
-num = input()
+num = input('Введите числа: ')
 list_num = []
 while num:
    list_num.append(num)
