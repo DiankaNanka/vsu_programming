@@ -1,10 +1,8 @@
-print('Введите пример: ')
-a = str(input())
-if a.count('(') > a.count(')'):
-    b = a.count("(") - a.count(")")
-    print('Не хватает закрывающих скобок: ')
-    print(b)
+a = input('Введите пример: ')
+count_ob = a.count('(')
+count_cb = a.count(')')
+
+if count_ob > count_cb:
+    print('Не хватает закрывающих скобок: ', count_ob - count_cb)
 else:
-    b = a.count(")") - a.count("(")
-    print('Не хватает открывающих скобок: ')
-    print(b)
+    print('Не хватает открывающих скобок: ', count_cb - count_ob)
