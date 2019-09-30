@@ -1,4 +1,4 @@
 print('Введите длину треугольника: ')
-N = int(input('N: '))
-for i in range(N + 1):
+n = int(input('n: '))
+for i in range(n + 1):
     print('*' * i)
