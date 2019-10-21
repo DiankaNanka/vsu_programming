@@ -11,5 +11,7 @@ def insertion_sort(nums):
             # Шаг назад
             j -= 1
     return(list_nums)
+
+
 nums = input()
 print(insertion_sort(nums))
