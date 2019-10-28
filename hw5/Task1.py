@@ -26,7 +26,7 @@ def get_dota_player(deq, people):
     return False
 
 
-d = deque(names.get(next(iter(names))))
+d = deque(names['Marina'])
 res = get_dota_player(d, names)
 if res:
     print(res)
