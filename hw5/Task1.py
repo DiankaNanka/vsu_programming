@@ -12,7 +12,7 @@ def doter(name):
 
 
 def get_dota_player(deq, people):
-    passed = set()
+    passed = []
     while deq:
         friend = deq.popleft()
         if friend not in passed:
@@ -20,7 +20,7 @@ def get_dota_player(deq, people):
                 return friend
             else:
                 deq += people.get(friend, [])
-            passed.add(friend)
+            passed.append(friend)
     return False
 
 
