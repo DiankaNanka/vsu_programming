@@ -1,9 +1,8 @@
-hash_size = 7
-hash_table = [[] for _ in range(hash_size)]
+hash_table = [[] for _ in range(2)]
  
  
 def hash_func(hash_str):
-    return len(hash_str) % hash_size
+    return len(hash_str) % 2
  
  
 def set_value(key, value):
