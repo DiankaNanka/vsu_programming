@@ -39,6 +39,3 @@ print(get_value("d"))
 print(get_value("2134"))
 print(get_value("142155"))
 print(get_value("142155e"))
- 
-for x in hash_table:
-    print(x)
