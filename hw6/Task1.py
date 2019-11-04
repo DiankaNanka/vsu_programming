@@ -44,7 +44,7 @@ def del_pair(key):
         if key == pair[0]:
             el.remove(pair)
             return True
-        return False
+    return False
 
 
 set_value("abc", 1)
