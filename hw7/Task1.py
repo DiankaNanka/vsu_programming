@@ -11,13 +11,11 @@ class Matrix:
     def rec(self):
         self.strng = int(input("Введи количество строк: "))
         self.column = int(input("Введи количество столбцов: "))
-        self.mtrx.append([[input("Введи элемент матрицы: ") for a in range(self.column)] for b in range(self.strng)])
-    
+        for a in range(self.column):
+            self.mtrx.append([int(input("Введи элемент матрицы: ")) for b in range(self.strng)])
+
     def output(self):
-        for row in self.mtrx:
-            for mtrx in row:
-                print(mtrx, end=' ')
-                print()
+        print(self.mtrx, end='\n')
 
 a = Matrix()
 a.rec()
