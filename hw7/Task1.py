@@ -3,19 +3,21 @@
 class Matrix:
 
     def __init__(self):
-        self.strng = None
+        self.string = None
         self.column = None
-        self.mtrx = []
+        self.matrix = []
         
 
     def rec(self):
-        self.strng = int(input("Введи количество строк: "))
+        self.string = int(input("Введи количество строк: "))
         self.column = int(input("Введи количество столбцов: "))
         for a in range(self.column):
-            self.mtrx.append([int(input("Введи элемент матрицы: ")) for b in range(self.strng)])
+            self.matrix.append([int(input("Введи элемент матрицы: ")) for b in range(self.string)])
 
     def output(self):
-        print(self.mtrx, end='\n')
+        for m in self.matrix:
+            print(' '.join(str(f) for f in m))
+
 
 a = Matrix()
 a.rec()
